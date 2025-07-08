@@ -38,9 +38,9 @@ class ClaimProcessor:
 
     def route_claim(self, claim):
         if claim.is_simple:
-            return "Auto-processed ✅"
+            return "Auto-processed "
         else:
-            return f"Flagged for manual review 🧑‍⚖️ | Score: {claim.complexity_score}"
+            return f"Flagged for manual review  | Score: {claim.complexity_score}"
 
 # Sample execution
 if __name__ == "__main__":
